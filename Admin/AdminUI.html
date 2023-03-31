@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="title">
+			
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-ticket"></i>
+                    <h2 class="counter">412</h2>
+                    <h4>Tickets Generated</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-bookmark"></i>
+                    <h2 class="counter">2,000</h2><span></span>
+                    <h4>Number of Bookings</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter">5,139</h2>
+                    <h4>Application Users</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-file"></i>
+                    <h2 class="counter">10,283</h2>
+                    <h4>Number of Downloads</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
