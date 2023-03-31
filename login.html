@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class = "form-value">
+                <form action>
+
+                    <h2> Login </h2>
+                    <div class = "inputbox">
+                        <input type ="email" required placeholder="Enter email">
+                        <label for="">Email</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type ="password" required placeholder="Enter password" id="inputPass">
+                        <label for="">Password</label>
+                        <i id="hide" class="bi bi-eye-slash" onclick="passFunction()"></i>
+                        <i id="show" class="bi bi-eye" onclick="passFunction()"></i>
+                        </span>
+                    </div>
+
+    
+                    <div class="forgotpass">
+                        <label for="#"> <a href="#">Forgot Password</a> </label>
+                    </div>
+
+                    <button>Log in</button>
+                    
+                    <div class="registerhere"></div>
+                        <p>Don't have a account? <a href="#">Register Here</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <script type="text/javascript">
+           function passFunction(){
+                var x = document.getElementById("inputPass");
+                if(x.type === "password") {
+                    x.type = "text";
+                    document.getElementById('hide').style.display = "inline-block";
+                    document.getElementById('show').style.display = "none";
+                }
+                else {
+                    x.type = "password";
+                    document.getElementById('hide').style.display = "none";
+                    document.getElementById('show').style.display = "inline-block";
+                }
+           }
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('LoginBackground.png') ;
+    background-position: center;
+    background-size: cover; 
+
+}
+
+.form-box{
+    border-radius: 5%;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    padding-top: 20px;
+    margin: 25px 0;
+    width: 310px;
+    border-bottom: 1px solid black;
+}
+
+.inputbox label{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 0%;
+    left: 1px;
+    transform: translateY(-50);
+    color: black;
+    pointer-events: none;
+}
+
+.inputbox input{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    width: 80%;
+    height: 50px;
+    background: transparent;    
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color: grey;
+    align-items: center;
+}
+
+#hide{
+    display: none;
+}
+
+/*Placeholder for email and password inputbox*/
+.inputbox input::placeholder{
+    color: #999;
+    font-style: italic;
+}
+
+.forgotpass{
+    margin: -15px 0 15px;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.forgotpass label a{
+    color: black;
+    text-decoration: none;
+}
+
+.forgotpass label a:hover{
+    color: black;
+    text-decoration-line: underline;
+}
+
+button {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    height: 50px;
+    border-radius: 40px;
+    background: navy;
+    border: 1px;
+    outline: 5px solid lightblue;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+button:hover{
+    background: lightblue;
+    outline: 5px solid navy;
+    color: black;
+}
+
+.registerhere {
+    text-align: center;
+    
+}
