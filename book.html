@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <form action="">
+        <h1>Booking Reservation</h1>
+        <hr/>
+        <label for="fName">First Name</label>
+        <input type="text" id="firstName" name="fName" value="" autocomplete="off">
+        <label for="lName">Last Name</label>
+        <input type="text" id="lastName" name="lName" value="" autocomplete="off">
+        <label for="emailAdd">Email</label>
+        <input type="text" id="emailAddress" name="emailAdd" value="" autocomplete="off">
+        <label for="reserve">Date of Reservation</label>
+        <input type="date" id="dateReservation" name="reserve" value="" autocomplete="off">
+        <label for="contactNo">Contact Number</label>
+        <input type="text" id="contactNum" name="contactNo" value="" autocomplete="off">
+        <hr/>
+        <br>
+        <label for="from">From</label>
+        <select name="isFromLoc" id="frLoc">
+            <option value="isSelecting">Location</option> 
+            <option value="isSelecting">ROUTE 1</option> 
+            <option value="isSelecting">ROUTE 2</option> 
+            <option value="isSelecting">ROUTE 3</option> 
+            <option value="isSelecting">ROUTE 4</option> 
+            <option value="isSelecting">ROUTE 5</option> 
+            <option value="isSelecting">ROUTE 6</option> 
+            <option value="isSelecting">ROUTE 7</option> 
+            <option value="isSelecting">ROUTE 8</option> 
+            <option value="isSelecting">ROUTE 9</option> 
+            <option value="isSelecting">ROUTE 10</option> 
+            <option value="isSelecting">ROUTE 11</option> 
+        </select>
+
+        <label for="To">To</label>
+        <select name="isToLoc" id="toLoc">
+            <option value="isSelecting">Location</option> 
+            <option value="isSelecting">ROUTE 1</option> 
+            <option value="isSelecting">ROUTE 2</option> 
+            <option value="isSelecting">ROUTE 3</option> 
+            <option value="isSelecting">ROUTE 4</option> 
+            <option value="isSelecting">ROUTE 5</option> 
+            <option value="isSelecting">ROUTE 6</option> 
+            <option value="isSelecting">ROUTE 7</option> 
+            <option value="isSelecting">ROUTE 8</option> 
+            <option value="isSelecting">ROUTE 9</option> 
+            <option value="isSelecting">ROUTE 10</option> 
+            <option value="isSelecting">ROUTE 11</option> 
+        </select>
+        <hr/>
+        <h1 class="price">₱</h1>
+        <hr/>
+        <button type="submit">Generate Ticket</button>
+    </form>
+</body>
+</html>
