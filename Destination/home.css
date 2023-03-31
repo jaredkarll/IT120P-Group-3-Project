@@ -1,0 +1,249 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-image {
+  top: 0px;
+  left: 0px;
+  width: 490px;
+  height: 1200px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text {
+  top: 18px;
+  left: 55px;
+  color: var(--dl-color-gray-black);
+  position: absolute;
+  font-size: 40px;
+  font-style: normal;
+  font-family: Tahoma;
+  font-weight: 600;
+}
+.home-text01 {
+  top: 128px;
+  left: 124px;
+  position: absolute;
+}
+.home-text02 {
+  color: var(--dl-color-primary-100);
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text03 {
+  color: var(--dl-color-primary-100);
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text11 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text12 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text17 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text18 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text23 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text24 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text29 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text30 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text38 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text39 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text44 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text45 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text50 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text51 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text56 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text57 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text62 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text63 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text68 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-text69 {
+  color: #003eb3;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-button {
+  left: 376px;
+  bottom: 15px;
+  position: absolute;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #bede12;
+}
+.home-image1 {
+  top: 129px;
+  left: -28px;
+  width: 132px;
+  height: 858px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-button1 {
+  left: 12px;
+  bottom: 12px;
+  position: absolute;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: rgb(190, 222, 18);
+}
+.home-image2 {
+  width: 100%;
+  height: 1185px;
+  opacity: 1;
+  object-fit: cover;
+}
+.home-icon {
+  top: 858px;
+  left: 32px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon02 {
+  top: 935px;
+  left: 39px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon04 {
+  top: 782px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon06 {
+  top: 703px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon08 {
+  top: 625px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon10 {
+  top: 547px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon12 {
+  top: 468px;
+  left: 34px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon14 {
+  top: 390px;
+  left: 34px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon16 {
+  top: 312px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon18 {
+  top: 223px;
+  left: 32px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.home-icon20 {
+  top: 149px;
+  left: 38px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
