@@ -2,12 +2,204 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SignUp.css">
+    <link rel="stylesheet" text="text/css" href="/Pages/public/SignUp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lexend', sans-serif;
+        }
+
+
+        .split.left {
+            height: 100%;
+            width: 60%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            object-position: center;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.164)), url('/Images/TaguigCity.jpg');
+        }
+
+
+        #motto {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+
+
+
+        .split.right {
+            width: 40%;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+
+        }
+
+
+        /* Control the left side */
+        .left {
+            left: 0;
+            background-color: navy;
+
+        }
+
+
+
+        /* Control the right side */
+        .right {
+            right: 0;
+            background-color: white;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+
+        section {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+
+        h2 {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+
+        }
+
+
+        .form-box {
+
+            border-radius: 5%;
+            position: relative;
+            width: 400px;
+            height: 550px;
+            background: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.288);
+        }
+
+
+        .inputbox {
+            position: relative;
+            padding-top: 10px;
+            margin: 25px 0;
+            width: 310px;
+            border-bottom: 1px solid black;
+        }
+
+        /*Placeholder for email and password inputbox*/
+        .inputbox input::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+
+        .inputbox label {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 0%;
+            left: 1px;
+            transform: translateY(-50);
+            color: black;
+            pointer-events: none;
+        }
+
+        /*Input box for Password*/
+        .inputbox input {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 300;
+            width: 80%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 35px 0 5px;
+            color: grey;
+            align-items: center;
+
+        }
+
+        /*Input box for Name & Email*/
+        .inputbox input[type="name"],
+        .inputbox input[type="email"] {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 300;
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 35px 0 5px;
+            color: grey;
+            align-items: center;
+
+        }
+
+        #hide {
+            display: none;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+
+        button {
+            width: 100%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            height: 50px;
+            border-radius: 40px;
+            background: navy;
+            border: 1px;
+            outline: 5px solid lightblue;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+
+
+        button:hover {
+            background: lightblue;
+            outline: 5px solid navy;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,24 +213,24 @@
         <div class="split right">
             <div class="centered">
                 <div class="form-box">
-                    <form action>
+                    <form action="/" method="post">
 
                         <h2> Sign Up </h2>
 
                         <div class="inputbox">
-                            <input type="name" required placeholder="Enter Name">
+                            <input type="name" required placeholder="Enter Name" name="name">
                             <label for="">Name</label>
                         </div>
 
 
                         <div class="inputbox">
-                            <input type="email" required placeholder="Enter email">
+                            <input type="email" required placeholder="Enter email" name="email">
                             <label for="">Email</label>
                         </div>
 
                         <div class="inputbox">
                             <label for="">Password</label>
-                            <input type="password" required placeholder="Enter password" id="inputPass">
+                            <input type="password" required placeholder="Enter password" id="inputPass" name="password">
                             <i id="hide" class="bi bi-eye-slash" onclick="passFunction()"></i>
                             <i id="show" class="bi bi-eye" onclick="passFunction()"></i>
                             </span>
@@ -48,7 +240,7 @@
                             <p> <input type="checkbox" required> I agree to the <a href=""> Terms and Conditions</a></p>
                         </div>
 
-                        <button> Create Account </button>   
+                        <button> Create Account </button>
 
                         <div class="loginhere">
                             <p>Already have an account? <a href="login.html">Log in</a></p>
@@ -62,19 +254,19 @@
 
 
     <script type="text/javascript">
-           function passFunction(){
-                var x = document.getElementById("inputPass");
-                if(x.type === "password") {
-                    x.type = "text";
-                    document.getElementById('hide').style.display = "inline-block";
-                    document.getElementById('show').style.display = "none";
-                }
-                else {
-                    x.type = "password";
-                    document.getElementById('hide').style.display = "none";
-                    document.getElementById('show').style.display = "inline-block";
-                }
-           }
+        function passFunction() {
+            var x = document.getElementById("inputPass");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById('hide').style.display = "inline-block";
+                document.getElementById('show').style.display = "none";
+            }
+            else {
+                x.type = "password";
+                document.getElementById('hide').style.display = "none";
+                document.getElementById('show').style.display = "inline-block";
+            }
+        }
 
     </script>
 
