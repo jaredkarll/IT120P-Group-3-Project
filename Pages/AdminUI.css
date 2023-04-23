@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lexend', sans-serif;
+}
+
+.menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 470px;
+	width: 55px;
+	background-color: #232877;
+	margin-top: 50px;
+	margin-left: 60px;
+	border-radius: 50px;
+	padding: 20px;
+	align-items: center;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+#admin {
+	height: 60px;
+	width: auto;
+}
+
+#ticket {
+	height: 50px;
+	width: auto;
+}
+
+#booking {
+	height: 40px;
+	width: auto;
+	filter: invert(100%) sepia(8%) saturate(7455%) hue-rotate(183deg) brightness(120%) contrast(95%);
+}
+
+/* Style the links inside the menu */
+.menu a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* Add hover effect to the links */
+.menu a:hover {
+	background-color: #555;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.form-box {
+	margin-top: 50px;
+	margin-left: 230px;
+	border-radius: 40px;
+	position: relative;
+	width: 900px;
+	height: 80px;
+	background: whitesmoke;
+	display: flex;
+	padding: 40px;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+	font-size: 40px;
+	color: black;
+	text-align: left;
+	display: flex;
+}
+
+p {
+
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.inputbox {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-top: 5px;
+	margin: 25px 0;
+	width: 550px;
+	border-bottom: 1px solid black;
+}
+
+.inputbox i {
+	position: absolute;
+	left: 0;
+	font-size: 20px;
+}
+
+
+.inputbox label {
+	font-family: 'Lexend', sans-serif;
+	font-weight: 700;
+	position: absolute;
+	top: 0%;
+	left: 1px;
+	transform: translateY(-50%);
+	color: black;
+	pointer-events: none;
+}
+
+
+.inputbox input {
+	font-family: 'Lexend', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: 50px;
+	margin-left: 30px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	padding: 0 35px 0 5px;
+	color: grey;
+	align-items: center;
+}
+
+.to-inputbox {
+	position: relative;
+	background-color: #c2c2c2;
+	border-radius: 20px;
+	height: 100px;
+	width: 540px;
+}
+
+/*Placeholder for email and password inputbox*/
+.inputbox input::placeholder {
+	color: #999;
+	font-style: italic;
+}
+
+.to-ticketgenerated {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 40px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: right;
+	background-color: #1d2a9b;
+	border-radius: 20px;
+	height: 400px;
+	width: 300px;
+
+}
+
+#TGLabel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 75px;
+	margin-top: 430px;
+	display: flex;
+	border-radius: 20px;
+	color: white;
+}
+
+
+button {
+	width: 35em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	height: 50px;
+	border-radius: 40px;
+	background: navy;
+	border: 1px;
+	outline: 5px solid lightblue;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+}
+
+
+button:hover {
+	background: lightblue;
+	outline: 5px solid navy;
+	color: black;
+}
+
+
+.backtologin {
+
+	font-size: 16px;
+	color: black;
+	display: flex;
+	justify-content: center;
+
+}
+
+.backtologin label a {
+	color: black;
+	text-decoration: none;
+}
+
+.backtologin label a:hover {
+	color: black;
+	text-decoration-line: underline;
+}
+
+
+#leftarrow {
+	margin-right: 8px;
+}

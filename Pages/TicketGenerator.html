@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TicketGenerator.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="/Pages/AdminUI.html"> <img src="/Images/male_user.png" id="admin"> </a>
+        <a href="#"> <img src="/Images/new_ticket.png" id="ticket"></a>
+        <a href="#"> <img src="/Images/bookmark-fill.svg" id="booking"></a>
+    </div>
+
+    <section>
+
+        <div class="form-box">
+            <form action>
+                <p>Ticket Generator</p>
+                <div class="inputbox">
+                    <label for="">From:</label>
+                    <input type="text" required placeholder="Enter Destination">
+                </div>
+
+                <div class="inputbox">
+                    <label for="">To:</label>
+                    <input type="text" required placeholder="Enter Destination">
+                </div>
+
+                <div class="inputbox">
+                    <label for="">Email Address:</label>
+                    <input type="email" required placeholder="Enter Email">
+                </div>
+
+                <div class="TPinputbox">
+                    <label for="Total">Total Price:</label>
+                    <div class="to-inputbox"></div>
+                </div>
+                <button>Submit</button>
+                <div class="Testing">
+                    <div class="to-ticketgenerated"></div>
+                    <h2 id="TGLabel">Tickets Generated</h2>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
