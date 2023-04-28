@@ -1,0 +1,77 @@
+body {
+    background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('LoginBackground.png') ;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.ticket {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    right: 3%;
+    bottom: 0;
+}
+
+.myIcon {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    right: 48%;
+}
+
+.routeFrom {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    right: 3%;
+    color: black;
+    width: 150px;
+}
+
+.routeDestination {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    right: 3%;
+    color: black;
+    width: 150px;    
+}
+
+.route-P,.destination-desc {
+    margin: 1px;
+}
+
+.destination-desc {
+   font-size: medium;
+   justify-items: left;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: auto;
+    width: 350px;
+}
+
+.date,
+.name,
+.isName,
+.insertDate,
+.
+
+
