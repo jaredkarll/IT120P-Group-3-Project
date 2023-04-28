@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)), url('LoginBackground.png');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            position: relative;
+        }
+
+        .title {
+            width: 60%;
+            display: inline-block;
+            margin: 150px auto 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .title h1 {
+            margin-bottom: 30px;
+        }
+
+        .title p {
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        .row {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 86%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .col {
+            flex-basis: 22%;
+            text-align: center;
+            color: #555;
+        }
+
+        .counter-box {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 20px -4px #66676c;
+        }
+
+        h2,
+        span {
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 50px;
+            color: #000;
+        }
+
+        .counter-box .fa {
+            font-size: 40px;
+            color: #0039a3;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="title">
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-ticket"></i>
+                    <h2 class="counter">412</h2>
+                    <h4>Tickets Generated</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-bookmark"></i>
+                    <h2 class="counter">2,000</h2><span></span>
+                    <h4>Number of Bookings</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter">5,139</h2>
+                    <h4>Application Users</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-file"></i>
+                    <h2 class="counter">10,283</h2>
+                    <h4>Number of Downloads</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,59 +8,210 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+
+            background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.164)), url('//Images/LoginBackground.png');
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .form-box {
+            border-radius: 5%;
+            position: relative;
+            width: 400px;
+            height: 450px;
+            background: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+
+        .inputbox {
+            position: relative;
+            padding-top: 20px;
+            margin: 25px 0;
+            width: 310px;
+            border-bottom: 1px solid black;
+        }
+
+        .inputbox label {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 0%;
+            left: 1px;
+            transform: translateY(-50);
+            color: black;
+            pointer-events: none;
+        }
+
+        /*Input box for Password*/
+        .inputbox input {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 300;
+            width: 80%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 35px 0 5px;
+            color: grey;
+            align-items: center;
+
+        }
+
+        /*Input box for Email*/
+        .inputbox input[type="email"] {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 300;
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 35px 0 5px;
+            color: grey;
+            align-items: center;
+
+        }
+
+
+        #hide {
+            display: none;
+        }
+
+        /*Placeholder for email and password inputbox*/
+        .inputbox input::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+
+        .forgotpass {
+            margin: -15px 0 15px;
+            font-size: 14px;
+            color: black;
+            display: flex;
+            justify-content: right;
+
+        }
+
+        .forgotpass label a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .forgotpass label a:hover {
+            color: black;
+            text-decoration-line: underline;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            height: 50px;
+            border-radius: 40px;
+            background: navy;
+            border: 1px;
+            outline: 5px solid lightblue;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+
+        button:hover {
+            background: lightblue;
+            outline: 5px solid navy;
+            color: black;
+        }
+
+        .registerhere {
+            text-align: center;
+        }
+    </style>
+
+
 </head>
+
 <body>
     <section>
         <div class="form-box">
-            <div class = "form-value">
+            <div class="form-value">
                 <form action>
 
                     <h2> Log In </h2>
-                    <div class = "inputbox">
-                        <input type ="email" required placeholder="Enter email">
+                    <div class="inputbox">
+                        <input type="email" required placeholder="Enter email">
                         <label for="">Email</label>
                     </div>
 
                     <div class="inputbox">
                         <label for="">Password</label>
-                        <input type ="password" required placeholder="Enter password" id="inputPass">
+                        <input type="password" required placeholder="Enter password" id="inputPass">
                         <i id="hide" class="bi bi-eye-slash" onclick="passFunction()"></i>
                         <i id="show" class="bi bi-eye" onclick="passFunction()"></i>
                         </span>
                     </div>
 
-    
+
                     <div class="forgotpass">
                         <label for="#"> <a href="ForgotPassword.html">Forgot Password</a> </label>
                     </div>
 
                     <button>Log in</button>
-                    
-                    <div class="registerhere"></div>
-                        <p>Don't have a account? <a href="SignUp.html">Sign-up Here</a></p>
-                    </div>
 
-                </form>
+                    <div class="registerhere"></div>
+                    <p>Don't have a account? <a href="/signup">Sign-up Here</a></p>
             </div>
+
+            </form>
+        </div>
         </div>
     </section>
 
-        <script type="text/javascript">
-           function passFunction(){
-                var x = document.getElementById("inputPass");
-                if(x.type === "password") {
-                    x.type = "text";
-                    document.getElementById('hide').style.display = "inline-block";
-                    document.getElementById('show').style.display = "none";
-                }
-                else {
-                    x.type = "password";
-                    document.getElementById('hide').style.display = "none";
-                    document.getElementById('show').style.display = "inline-block";
-                }
-           }
+    <script type="text/javascript">
+        function passFunction() {
+            var x = document.getElementById("inputPass");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById('hide').style.display = "inline-block";
+                document.getElementById('show').style.display = "none";
+            }
+            else {
+                x.type = "password";
+                document.getElementById('hide').style.display = "none";
+                document.getElementById('show').style.display = "inline-block";
+            }
+        }
 
-        </script>
+    </script>
 
 </body>
+
 </html>

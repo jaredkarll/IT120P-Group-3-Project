@@ -17,7 +17,7 @@ app.listen(3000, function () {
     console.log("Server is up and running");
 })
 
-app.get("/", function (req, res) {
+app.get("/signup", function (req, res) {
     res.sendFile(__dirname + "/SignUp.html");
 })
 
@@ -87,6 +87,12 @@ app.post("/login", function (req, res) {
     });
 });
 
+
 app.get("/Destination/index", function (req, res) {
     res.sendFile(__dirname + "/Destination/index.html");
 });
+
+app.get("/Admin", function (req, res) {
+    res.sendFile(__dirname + "/AdminUI.html");
+});
+
