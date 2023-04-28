@@ -162,6 +162,20 @@ p {
 
 }
 
+#status {
+    height: 50px;
+	width: 50px;
+    position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 170px;
+	margin-top: 495px;
+	display: flex;
+	border-radius: 20px;
+	color: white;
+}
+
+
 #TGLabel {
 	position: absolute;
 	top: 0;
@@ -220,3 +234,4 @@ button:hover {
 #leftarrow {
 	margin-right: 8px;
 }
+
