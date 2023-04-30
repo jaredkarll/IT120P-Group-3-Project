@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a81e19cd1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
+    *{
+        margin: 1;
+        padding: 2;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    body {
+        background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('LoginBackground.png') ;
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .container {
+        margin: auto;
+        width: 40%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: black;
+    }
+
+    .items {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        border-bottom: solid rgba(0, 0, 0, 0.316) 1px;
+    }
+
+    .items i {
+        color: #12b53b;
+        margin: auto;
+        font-size: 5em;
+    }
+
+    .details {
+        width: 60%;
+        color:black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .details-content {
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        text-align: left;
+    
+    }
+
+    .isCode {
+        font-size: 20px;
+    }
+
+    .complete-btn {
+        background-color:#12b53b;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 20px 20px 20px 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        width: 50%;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: 35px;
+    }
+
+    .complete-btn:hover {
+        background-color: #2ab94d;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items">
+            <i class="fa-sharp fa-solid fa-circle-check fa-bounce fa-5x"></i>
+            <h1>TICKET GENERATED</h1>
+        </div>
+        <div class="details">
+            <div class="details-content">
+                <div class="toLoc">
+                    <h3>TO:</h3>
+                </div>
+                <div class="isToLoc">
+                    <p><%= getRow.f_location %></p>
+                </div>
+                <div class="destination">
+                    <h3>DESTINATION</h3>
+                </div>
+                <div class="isDestination">
+                    <p><%= getRow.l_location %></p>
+                </div>
+                <div class="date">
+                    <h3>Date:</h3>
+                </div>
+                <div class="insertDate">
+                    <p><%= getRow.date %></p>
+                </div>
+                <div class="name">
+                    <h3>Passenger Name:</h3>
+                </div>
+                <div class="isName">
+                    <p><%= getRow.first_name %>, <%= getRow.last_name %></p>
+                </div>
+                <div class="price">
+                    <h3>Price:</h3>
+                </div>
+                <div class="isPrice">
+                    <p>₱<%= getRow.price %></p>
+                </div>
+                <div class="code">
+                    <h1>Code: </h1>
+                </div>
+                <div class="isCode">
+                    <p><%= getRow.code %></p>
+                </div>
+                <p style="text-align: center; margin-left: auto; margin-right: 15px; font-weight: bold;">Take a screenshot and save it to your photos</p><br>
+                <a href="/home" class="complete-btn">Complete</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

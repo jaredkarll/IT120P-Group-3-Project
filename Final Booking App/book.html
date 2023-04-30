@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('LoginBackground.png') ;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 10px 10px 10px 10px;
+}
+
+input[type='text'], 
+input[type='date'] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;    
+}
+
+.price {
+    width: 20%;
+    padding: 15px;
+    background-color: whitesmoke;
+    
+}
+
+button {
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    background-color: rgb(112, 220, 4);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+}
+</style>
+<body>
+    <form action="/book" method="post">
+        <h1>Booking Reservation</h1>
+        <hr/>
+        <label for="fName">First Name</label>
+        <input type="text" id="firstName" name="firstName"  id="firstName" placeholder="Enter your first name"  required autocomplete="off">
+        <label for="lName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" id="lastName" placeholder="Enter your last name" required autocomplete="off">
+        <label for="emailAdd">Email</label>
+        <input type="email" id="emailAddress" name="emailAdd"  id="emailAddress" placeholder="Enter email" required autocomplete="off">
+        <label for="reserve">Date of Reservation</label>
+        <input type="date" id="dateReservation" name="reserve" required autocomplete="off">
+        <label for="contactNo">Contact Number</label>
+        <input type="text" id="contactNum" name="contactNo" placeholder="Contact Number" required autocomplete="off">
+        <hr/>
+        <br>
+        <label for="from">From</label>
+    <select name="isFromLoc" id="frLoc">
+        <option value="isSelecting">Location</option> 
+        <option value="ROUTE 1: Fort Bonifacio, Gate 3 Plaza Terminal Lawton Ave., Plaza Terminal">ROUTE 1: Fort Bonifacio, Gate 3 Plaza Terminal Lawton Ave., Plaza Terminal</option> 
+        <option value="ROUTE 2: Lawton Ave., Taguig">ROUTE 2: Lawton Ave., Taguig</option> 
+        <option value="ROUTE 3: Lawton Ave / Bayani Rd. Intersection">ROUTE 3: Lawton Ave / Bayani Rd. Intersection</option> 
+        <option value="ROUTE 4: Lawton Ave., Taguig">ROUTE 4: Lawton Ave., Taguig</option> 
+        <option value="ROUTE 5: McKinely Parkway Intersection Taguig City">ROUTE 5: McKinely Parkway Intersection Taguig City</option> 
+        <option value="ROUTE 6: Mckinely Parkway">ROUTE 6: Mckinely Parkway</option> 
+        <option value="ROUTE 7: Market Market">ROUTE 7: Market Market</option> 
+        <option value="ROUTE 8: Energy Development Corporation, 38th St.">ROUTE 8: Energy Development Corporation, 38th St.</option> 
+        <option value="ROUTE 9: British School Manila, Taguig City">ROUTE 9: British School Manila, Taguig City</option> 
+        <option value="ROUTE 10: Manila Japanese School">ROUTE 10: Manila Japanese School</option> 
+        <option value="ROUTE 11: 34th Street, Taguig">ROUTE 11: 34th Street, Taguig</option> 
+    </select>
+
+        <label for="To">To</label>
+        <select name="isToLoc" id="toLoc">
+            <option value="isSelecting">Location</option> 
+            <option value="ROUTE 1: Fort Bonifacio, Gate 3 Plaza Terminal Lawton Ave., Plaza Terminal">ROUTE 1: Fort Bonifacio, Gate 3 Plaza Terminal Lawton Ave., Plaza Terminal</option> 
+            <option value="ROUTE 2: Lawton Ave., Taguig">ROUTE 2: Lawton Ave., Taguig</option> 
+            <option value="ROUTE 3: Lawton Ave / Bayani Rd. Intersection">ROUTE 3: Lawton Ave / Bayani Rd. Intersection</option> 
+            <option value="ROUTE 4: Lawton Ave., Taguig">ROUTE 4: Lawton Ave., Taguig</option> 
+            <option value="ROUTE 5: McKinely Parkway Intersection Taguig City">ROUTE 5: McKinely Parkway Intersection Taguig City</option> 
+            <option value="ROUTE 6: Mckinely Parkway">ROUTE 6: Mckinely Parkway</option> 
+            <option value="ROUTE 7: Market Market">ROUTE 7: Market Market</option> 
+            <option value="ROUTE 8: Energy Development Corporation, 38th St.">ROUTE 8: Energy Development Corporation, 38th St.</option> 
+            <option value="ROUTE 9: British School Manila, Taguig City">ROUTE 9: British School Manila, Taguig City</option> 
+            <option value="ROUTE 10: Manila Japanese School">ROUTE 10: Manila Japanese School</option> 
+            <option value="ROUTE 11: 34th Street, Taguig">ROUTE 11: 34th Street, Taguig</option> 
+        </select>
+        <hr/>
+        <h1 class="price" id="price">₱</h1>
+        <hr/>
+        <button type="submit">Generate Ticket</button>
+    </form>
+</body>
+</html>
+
+<!--///// Instructions
+    For modernized jeepneys, the new minimum fare will be P14 for the first four kilometers and P2.20
+    
+
+    //// limitation
+    The scope of the project is the prototype application of the webapp of Taguig Modernize Jeepney. The fare price and  succeeding kilometer will be used for this project.
+    However, the exact kilometer per route will be excluded to our project.
+-->
+
