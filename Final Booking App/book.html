@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="/ticket.css">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300,700&display=swap');
     * {
     box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
 }
 
 body {
-    background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('LoginBackground.png') ;
+    background-image: linear-gradient(0deg, rgba(3, 3, 75, 0.808), rgba(0, 0, 128, 0.24)),url('https://imgcdnblog.carmudi.com.ph/carmudi-ph/wp-content/uploads/2018/07/19042123/IMG_2054-min.jpg') ;
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -31,7 +33,8 @@ form {
 }
 
 input[type='text'], 
-input[type='date'] {
+input[type='date'],
+input[type='email'] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -122,13 +125,3 @@ button {
     </form>
 </body>
 </html>
-
-<!--///// Instructions
-    For modernized jeepneys, the new minimum fare will be P14 for the first four kilometers and P2.20
-    
-
-    //// limitation
-    The scope of the project is the prototype application of the webapp of Taguig Modernize Jeepney. The fare price and  succeeding kilometer will be used for this project.
-    However, the exact kilometer per route will be excluded to our project.
--->
-
