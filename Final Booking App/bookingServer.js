@@ -21,15 +21,24 @@ app.use(session({
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname)));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine', 'ejs');
-app.use("public", express.static(__dirname + "/booking/public"));
+app.use(express.static(__dirname + '/public'));
+
+app.get('/ticket.css', function(req, res) {
+    res.setHeader('Content-Type', 'text/css');
+    res.sendFile(__dirname + '/public/.css');
+  });
 
 // http://localhost:4000/book
 app.get('/book', function(request,response){
     response.sendFile(__dirname + "/book.html");
+});
+
+app.get('/home', function(request, response){
+    response.sendFile(__dirname + "/index.html");
 });
 
 app.get('/ticket',  function(request,response){
@@ -62,18 +71,14 @@ app.post('/book', function(request,response){
     connection.query(priceSql, priceVal, function(error, results, fields) {
         if(error) throw error;
         console.log(results);
+        //Insert to booking database
         connection.query(sql,[val], function(error, results, fields){ 
             if(error) throw error;
             console.log("Inserted");
         });
+
+        //Insert to ticket database
         let price = results[0].price;
-        console.log(`Code: ${code} 
-                     FN: ${firstName}
-                     LN: ${lastName}
-                     date ${date}
-                     floc: ${selectedFirstLocation}
-                     lloc: ${selectedLastLocation}
-                     price: ${price}`);
         let sqlTicket = "INSERT INTO tickets(code, first_name, last_name, date, f_location, l_location, price) VALUES(?)"
         let ticketVal = [code, firstName, lastName, date, selectedFirstLocation, selectedLastLocation, price];
         connection.query(sqlTicket, [ticketVal], function(error,results, fields){
